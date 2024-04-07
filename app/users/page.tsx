@@ -1,5 +1,5 @@
 import { table } from 'console';
-import React from 'react';
+import React, { Suspense } from 'react';
 import UserTable from './UserTable';
 import Link from 'next/link';
 
@@ -15,7 +15,9 @@ const page = async({searchParams:{sortOrder}}:Props) => {
         <div>
             <h1>users</h1>
             <Link href="/users/new" className='btn '>New User</Link>
-           <UserTable sortOrder= {sortOrder} />
+            <Suspense fallback={<p>Loading...</p>}>
+                <UserTable sortOrder= {sortOrder} />
+            </Suspense>
         </div>
     );
 };
