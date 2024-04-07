@@ -1,3 +1,20 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "no-console": "off",
+    "array-bracket-newline": "off",
+    "array-bracket-spacing": "off",
+    "array-callback-return": "off",
+    "array-element-newline": "off",
+    "arrow-body-style": "off",
+    "arrow-parens": "off",
+    "arrow-spacing": "off",
+    "block-scoped-var": "off",
+    "block-spacing": "off",
+    "brace-style": "off",
+    "callback-return": "off"
+  }
 }
+
+
+
