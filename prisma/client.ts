@@ -1,8 +1,4 @@
-import { PrismaClient } from "@prisma/client/extension";
 
-const prisma = new PrismaClient();
-
-export default prisma;
 import { PrismaClient } from '@prisma/client'
 
 const prismaClientSingleton = () => {
